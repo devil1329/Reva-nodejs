@@ -1,0 +1,93 @@
+<app-navbar></app-navbar>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	<div class="carousel-indicators">
+		<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+			aria-current="true" aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+			aria-label="Slide 2"></button>
+		<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active"
+			aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner">
+		<div class="carousel-item">
+			<img src="../assets/images/c1.jpg" class="d-block w-100" alt="...">
+		</div>
+		<div class="carousel-item">
+			<img src="../assets/images/c2.jpg" class="d-block w-100" alt="...">
+		</div>
+		<div class="carousel-item active">
+			<img src="../assets/images/c3.jpg" class="d-block w-100" alt="...">
+		</div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+		data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+		data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
+</div>
+<!-- For Beginners -->
+<div class="container" id="content">
+        <div class="row row-content" style="margin-bottom: 5px;">
+                <h5 class="title">Beginners</h5>
+        </div>
+        <div class="row row-content">
+                <div class="col-sm-3" *ngFor="let anime of animeBeginnerArr">
+                        <div class="card">
+                                <img [src]="anime.anime_img" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                        <div class="shadow-lg">
+                                                <h5 class="card-title text-white">{{anime.anime_name}}</h5>
+                                        </div>
+                                        <p>{{anime.anime_description}} </p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<!-- New Release -->
+<div class="container">
+        <div class="row row-content" style="margin-bottom: 5px;">
+                <h5 class="title">New Release</h5>
+        </div>
+        <div class="row row-content">
+                <div class="col-sm-3" *ngFor="let anime of animeNewReleaseArr">
+                        <div class="card">
+                                <img [src]="anime.anime_img" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                        <div class="shadow-lg">
+                                                <h5 class="card-title text-white">{{anime.anime_name}}</h5>
+                                        </div>
+                                        <p>{{anime.anime_description}} </p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<!-- Famous -->
+<div class="container">
+        <div class="row row-content" style="margin-bottom: 5px;">
+                <h5 class="title">Famous</h5>
+        </div>
+        <div class="row row-content">
+                <div class="col-sm-3" *ngFor="let anime of animeFamousArr">
+                        <div class="card">
+                                <img [src]="anime.anime_img" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                        <div class="shadow-lg">
+                                                <h5 class="card-title text-white">{{anime.anime_name}}</h5>
+                                        </div>
+                                        <p>{{anime.anime_description}} </p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<app-footer></app-footer>

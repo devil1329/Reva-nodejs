@@ -1,0 +1,33 @@
+/* navbar */
+#NavBar {
+        z-index: 10;
+        background-color: #0d1b2b;
+        opacity: 0.85;
+}
+
+.navTitle {
+        font-size: 25px;
+        font-style: oblique;
+        font-weight: bolder;
+        color: rgba(221, 174, 118, 0.8784313725);
+}
+
+#logo {
+        top: 0;
+        height: 30px;
+        width: 30px;
+}
+
+#logo-name {
+        padding-top: 15px;
+        margin-top: 10px;
+        padding-left: 5px;
+        font-size: 30px;
+        color: rgba(221, 174, 118, 0.8784313725);
+        font-weight: bold;
+        text-shadow: 0px 1px 4px;
+}
+
+.navBgColor {
+        background-color: #0c111b;
+}

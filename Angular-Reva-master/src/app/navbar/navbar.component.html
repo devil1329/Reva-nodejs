@@ -1,0 +1,35 @@
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- navbar  -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="NavBar">
+	<div class="container-fluid mx-5">
+		<a class="navbar-brand" href="#"><img id="logo" src="../assets/images/logo.png" alt=""><span
+				id="logo-name">RevA</span></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a routerLinkActive="active" routerLink="/Home" class="nav-link"><span
+							class="navTitle">Home</span></a>
+				</li>
+				<li class="nav-item">
+					<a routerLinkActive="active" routerLink="/About" class="nav-link"><span
+							class="navTitle">About Us</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="offcanvas" href="#contactUs"
+						aria-controls="contactUs"><span class="navTitle">Contact</span></a>
+				</li>&nbsp;&nbsp;&nbsp;
+				<li class="nav-item">
+					<a routerLinkActive="active" routerLink="" class="nav-link"><span
+						class="navTitle"><i class="fa-solid fa-right-from-bracket"></i>Logout</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
